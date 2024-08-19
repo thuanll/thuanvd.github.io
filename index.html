@@ -90,7 +90,8 @@ Author URL: http://w3layouts.com
                     </div>
                     <script>
                         function scrollDown() {
-                            window.scrollBy({ top: 1350, behavior: 'smooth' });
+                            const currentScroll = window.scrollY;
+                            window.scrollBy({ top: 1350 - currentScroll, behavior: 'smooth' });
                          }
                     </script>
                 </div>
